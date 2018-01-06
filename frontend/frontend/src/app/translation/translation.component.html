@@ -1,0 +1,129 @@
+<div class="panel-body">
+    <form class="form-horizontal" action="">
+
+    <fieldset>
+      <div class="row">
+
+          
+
+        
+        <div class="panel-heading">
+            <div class="panel-title"><h4>Translation Api</h4>
+            <p>Endpoint: <a href=""><strong>http://localhost:5000/translate/</strong></a> Method: <strong>PUT</strong></p>
+            </div>
+          </div>
+          </div>
+        
+        <div class="form-group">
+            <div class="row">
+              <textarea class="form-control" placeholder="Textarea" rows="3" required [(ngModel)]="item.text" name="title"></textarea>
+            </div>
+          </div>
+      
+      <div class="form-group">
+          <div class="row">
+            <div class="col-sm-6">
+              <input class="form-control" placeholder="Input Language..." type="text" list="list" required [(ngModel)]="item.language_input" name="outputlanguage">
+             </div>
+             <div class="col-sm-6">
+          <input class="form-control" placeholder="Output Language..." type="text" list="list" required [(ngModel)]="item.language_output" name="outputlanguage">
+          </div>
+          <datalist id="list">
+            <option value="Alexandra"></option>
+            <option value="Alice"></option>
+            <option value="Anastasia"></option>
+            <option value="Avelina"></option>
+            <option value="Basilia"></option>
+            <option value="Beatrice"></option>
+            <option value="Cassandra"></option>
+            <option value="Cecil"></option>
+            <option value="Clemencia"></option>
+            <option value="Desiderata"></option>
+            <option value="Dionisia"></option>
+            <option value="Edith"></option>
+            <option value="Eleanora"></option>
+            <option value="Elizabeth"></option>
+            <option value="Emma"></option>
+            <option value="Felicia"></option>
+            <option value="Florence"></option>
+            <option value="Galiana"></option>
+            <option value="Grecia"></option>
+            <option value="Helen"></option>
+            <option value="Helewisa"></option>
+            <option value="Idonea"></option>
+            <option value="Isabel"></option>
+            <option value="Joan"></option>
+            <option value="Juliana"></option>
+            <option value="Karla"></option>
+            <option value="Karyn"></option>
+            <option value="Kate"></option>
+            <option value="Lakisha"></option>
+            <option value="Lana"></option>
+            <option value="Laura"></option>
+            <option value="Leona"></option>
+            <option value="Mandy"></option>
+            <option value="Margaret"></option>
+            <option value="Maria"></option>
+            <option value="Nanacy"></option>
+            <option value="Nicole"></option>
+            <option value="Olga"></option>
+            <option value="Pamela"></option>
+            <option value="Patricia"></option>
+            <option value="Qiana"></option>
+            <option value="Rachel"></option>
+            <option value="Ramona"></option>
+            <option value="Samantha"></option>
+            <option value="Sandra"></option>
+            <option value="Tanya"></option>
+            <option value="Teresa"></option>
+            <option value="Ursula"></option>
+            <option value="Valerie"></option>
+            <option value="Veronica"></option>
+            <option value="Wilma"></option>
+            <option value="Yasmin"></option>
+            <option value="Zelma"></option>
+          </datalist> 
+          <p class="note"><strong>Note:</strong> This is an auto complete field.</p>
+        </div>
+
+
+
+
+
+        
+      </div>
+    </fieldset>
+    <div class="form-actions">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-success" type="submit">
+              <i class=""></i>
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+
+  </form>
+  </div>
+<br/>
+
+  <div class="row">
+    <br/>
+      <div class="col-md-12 panel-warning">
+        <div class="content-box-header panel-heading">
+          <div class="panel-title ">Translation Results</div>
+          <div class="text-left"><p>{{item.language_input}} ==> {{item.language_output}}</p></div>
+        
+        <div class="panel-options">
+          <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+          <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+        </div>
+        </div>
+        <div class="content-box-large box-with-header">
+          {{item.text}}
+          
+        <br /><br />
+      </div>
+      </div>
+    </div>

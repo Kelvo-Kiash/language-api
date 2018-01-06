@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="panel-heading">
+        <div class="panel-title"><h4>Sentiment Analysis Api</h4></div>
+        <p>Endpoint: <a href=""><strong>http://localhost:5000/sentiments/</strong></a> Method: <strong>PUT</strong></p>
+      </div>
+      </div>
+
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <div class="row">
+          <textarea class="form-control" placeholder="Textarea" rows="3" required [(ngModel)]="item.text" name="title"></textarea>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-success btn-right">Submit</button>
+  </form>
+<br />
+  <div class="results">
+
+      <div class="row">
+		  		<div class="col-md-12 panel-warning">
+		  			<div class="content-box-header panel-heading">
+	  					<div class="panel-title ">Sentiment Analysis Results</div>
+						
+						<div class="panel-options">
+							<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+							<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+						</div>
+		  			</div>
+		  			<div class="content-box-large box-with-header">
+              {{items}}
+              
+						<br /><br />
+					</div>
+		  		</div>
+		  	</div>
+
+  </div>

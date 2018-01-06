@@ -1,0 +1,50 @@
+<div class="panel-body">
+   
+      <div class="row">
+        <div class="panel-heading">
+            <div class="panel-title"><h4>Language Detection Api</h4></div>
+
+            <p>Endpoint: <a href=""><strong>http://localhost:5000/language/</strong></a> Method: <strong>PUT</strong></p>
+          </div>
+          </div>
+          <form (ngSubmit) = "onSubmit()">
+              
+        <div class="form-group">
+            <div class="row">
+              <textarea class="form-control" placeholder="Textarea" rows="3" required [(ngModel)]="item.text" name="title"></textarea>
+            </div>
+          </div>
+   
+          <div class="form-actions">
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-success" type="submit">
+                    <i class=""></i>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+
+  </form>
+  </div>
+<br/>
+
+  <div class="row">
+    <br/>
+      <div class="col-md-12 panel-info">
+        <div class="content-box-header panel-heading">
+          <div class="panel-title ">Language Detection Results</div>
+        
+        <div class="panel-options">
+          <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+          <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+        </div>
+        </div>
+        <div class="content-box-large box-with-header">
+
+          {{items}}
+                  <br /><br />
+      </div>
+      </div>
+    </div>
